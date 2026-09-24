@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jatin Saini - iOS Developer - Resume</title>
+<!-- Source for assets/Jatin-Saini-iOS-Resume.pdf. Edit here, then re-export with tools/export-resume.js.
+     ATS notes: one column, standard section names, real text (no images or tables), a common font. -->
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 400 9.5pt/1.36 Arial, "Helvetica Neue", Helvetica, sans-serif; color: #1f1f1f; }
+  .page { width: 210mm; height: 297mm; overflow: hidden; padding: 11mm 15mm 9mm; }
+
+  h1 { margin: 0; font-size: 21pt; font-weight: 700; letter-spacing: .2pt; color: #111; }
+  .title { margin: 3pt 0 0; font-size: 11pt; font-weight: 700; color: #7c2d3e; }
+  .contact { margin: 5pt 0 0; font-size: 9.4pt; color: #333; }
+  .contact a { color: inherit; text-decoration: none; }
+
+  h2 {
+    margin: 9pt 0 4pt;
+    padding-bottom: 2pt;
+    border-bottom: .8pt solid #7c2d3e;
+    font-size: 10.4pt;
+    font-weight: 700;
+    letter-spacing: .9pt;
+    text-transform: uppercase;
+    color: #7c2d3e;
+  }
+  p { margin: 0; }
+
+  .role { margin-top: 5pt; }
+  .role:first-of-type { margin-top: 0; }
+  .role__line { display: flex; justify-content: space-between; gap: 12pt; }
+  .role__title { font-weight: 700; font-size: 10.4pt; }
+  .role__date { white-space: nowrap; font-size: 9.6pt; color: #333; }
+  .role__sub { font-size: 9.6pt; font-style: italic; color: #444; }
+  ul { margin: 3pt 0 0; padding-left: 13pt; }
+  li { margin: 1pt 0; padding-left: 1pt; }
+  .tech { margin-top: 3pt; font-size: 9.4pt; color: #333; }
+  .tech b { color: #1f1f1f; }
+
+  .skills p { margin: 2pt 0; padding-left: 38mm; text-indent: -38mm; }
+  .skills b { display: inline-block; width: 38mm; text-indent: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Jatin Saini</h1>
+  <p class="title">iOS Developer</p>
+  <p class="contact">
+    <a href="mailto:js32640@gmail.com">js32640@gmail.com</a> | +91 84397 48407 |
+    <a href="https://www.linkedin.com/in/jatinsaini07">linkedin.com/in/jatinsaini07</a>
+  </p>
+
+  <h2>Summary</h2>
+  <p>iOS developer who builds iPhone apps with Swift, SwiftUI and UIKit. At Zapplogics I work on production apps for clients and take part in their App Store releases, so I know the process from TestFlight through App Review. As an intern I migrated a bilingual English/Arabic app from UIKit to SwiftUI. I care about clean MVVM code, stable releases and working closely with designers and QA.</p>
+
+  <h2>Experience</h2>
+  <div class="role">
+    <div class="role__line">
+      <p class="role__title">iOS Developer, Zapplogics Solution LLP</p>
+      <p class="role__date">Sep 2025 – Present</p>
+    </div>
+    <ul>
+      <li>Take part in App Store releases for client apps through TestFlight and App Store Connect.</li>
+      <li>Build and maintain features in Swift with SwiftUI and UIKit, following an MVVM architecture.</li>
+      <li>Integrate REST APIs and Firebase services, including Authentication, Firestore, Storage, Analytics and push notifications.</li>
+      <li>Create reusable UI components and shared modules so common screens are not rebuilt for every project.</li>
+      <li>Find and fix crashes, UI bugs and performance problems before release, working alongside QA engineers.</li>
+      <li>Work with designers and backend developers from planning through to release.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role__line">
+      <p class="role__title">iOS Developer Intern, Rudra IT Network</p>
+      <p class="role__date">Jul 2025 – Aug 2025</p>
+    </div>
+    <p class="role__sub">Asuaaq: buy-and-sell classifieds app in English and Arabic</p>
+    <ul>
+      <li>Migrated the app from UIKit to SwiftUI, rebuilding its screens on an MVVM architecture.</li>
+      <li>Continued feature work and maintenance on the new SwiftUI codebase after the migration.</li>
+      <li>Connected the app to REST APIs and Firebase for listing data and backend communication.</li>
+      <li>Implemented English and Arabic localization, including right-to-left layouts.</li>
+      <li>Fixed SwiftUI and API integration bugs, making the app more stable and easier to maintain.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="role">
+    <div class="role__line">
+      <p class="role__title">HydraPet, personal iOS app</p>
+      <p class="role__date">In development</p>
+    </div>
+    <ul>
+      <li>Building a hydration tracker where an animal companion fills with water as the user drinks, with 13 drink types weighted by how hydrating they are.</li>
+      <li>Wrote streak rules keyed to the user's local calendar day, so midnight, time-zone changes and an unfinished day never break a streak unfairly.</li>
+      <li>Structured the app as SwiftUI views with @Observable view models, a service layer and repositories over SwiftData.</li>
+      <li>Wrote 90 unit tests with Swift Testing, using an injectable clock to test behaviour across midnight.</li>
+      <li>Next: home-screen widgets, StoreKit 2 purchases and translations for 8 languages.</li>
+    </ul>
+    <p class="tech"><b>Tech:</b> SwiftUI, @Observable, SwiftData, Swift Testing, UserNotifications, MVVM, iOS 18</p>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><b>Languages &amp; UI</b> Swift, SwiftUI, UIKit, MVVM, Combine, Observation (@Observable)</p>
+    <p><b>Concurrency &amp; data</b> Swift Concurrency (async/await, Task, actors), Codable, JSON, SwiftData, Core Data, UserDefaults, @AppStorage</p>
+    <p><b>Backend &amp; services</b> REST APIs, Firebase (Authentication, Firestore, Storage, Analytics), push notifications</p>
+    <p><b>App Store delivery</b> App Store Connect, TestFlight, StoreKit 2, in-app purchases</p>
+    <p><b>Other</b> Localization (English/Arabic, RTL), unit testing with Swift Testing, debugging, performance optimization</p>
+    <p><b>Tools</b> Xcode, Git, GitHub, Swift Package Manager, AI coding tools (Claude, Cursor, Codex, Antigravity)</p>
+  </div>
+
+  <h2>Education</h2>
+  <div class="role__line">
+    <p><b>Bachelor of Computer Applications (BCA)</b>, Chaudhary Charan Singh University, Meerut</p>
+    <p class="role__date">Jun 2025</p>
+  </div>
+
+  <h2>Certifications</h2>
+  <div class="role__line">
+    <p><b>Complete iOS 16 Developer with SwiftUI and 10 Apps</b>, Udemy</p>
+    <p class="role__date">Jul 2025</p>
+  </div>
+</div>
+</body>
+</html>

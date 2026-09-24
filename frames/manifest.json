@@ -1,0 +1,19 @@
+{
+  "mode": "keyframes",
+  "width": 1080,
+  "height": 1341,
+  "frames": {
+    "work": [
+      "work-1.webp",
+      "work-2.webp"
+    ],
+    "left": "left.webp",
+    "right": "right.webp",
+    "hey": "hey.webp",
+    "hi": [
+      "hi-1.webp",
+      "hi-2.webp"
+    ],
+    "point": "point.webp"
+  }
+}

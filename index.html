@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jatin Saini — iOS Developer</title>
+  <meta name="description" content="Jatin Saini, iOS Developer at Zapplogics Solution LLP. Builds production iPhone apps with Swift, SwiftUI, UIKit and MVVM, and works on the release process through TestFlight and the App Store. Open to iOS Developer roles.">
+  <meta name="theme-color" content="#fbf4f5">
+  <meta property="og:title" content="Jatin Saini — iOS Developer">
+  <meta property="og:description" content="iOS Developer: Swift, SwiftUI, UIKit, Firebase and App Store release workflows. Open to iOS Developer roles.">
+  <meta property="og:type" content="profile">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jatin Saini",
+    "jobTitle": "iOS Developer",
+    "sameAs": ["https://www.linkedin.com/in/jatinsaini07"],
+    "email": "mailto:js32640@gmail.com",
+    "worksFor": { "@type": "Organization", "name": "Zapplogics Solution LLP" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Chaudhary Charan Singh University, Meerut" },
+    "knowsAbout": ["Swift", "SwiftUI", "UIKit", "MVVM", "Combine", "Swift Concurrency", "Core Data", "Firebase", "StoreKit 2", "App Store Connect", "TestFlight"]
+  }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c2d3e'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23fff' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" data-nav>
+  <a class="nav__brand" href="#top" aria-label="Jatin Saini, back to top">
+    <span class="nav__mark">JS</span>
+    <span class="nav__name">Jatin Saini</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#work">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#credentials">Credentials</a>
+  </nav>
+  <div class="nav__actions">
+    <a class="nav__resume" href="assets/Jatin-Saini-iOS-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a class="nav__cta" href="#contact">Let's talk</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" data-hero data-state="work">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__intro">
+      <p class="avail"><span class="avail__dot" aria-hidden="true"></span>Open to iOS Developer roles</p>
+      <h1 class="hero__hello">I'm <em>Jatin Saini</em></h1>
+      <p class="hero__role">iOS Developer</p>
+      <p class="hero__pitch">I turn ideas into polished iPhone apps with SwiftUI and UIKit, and I know the road from Xcode to the App Store.</p>
+      <div class="hero__cta">
+        <a class="btn btn--solid btn--sm" href="assets/Jatin-Saini-iOS-Resume.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Resume
+        </a>
+        <a class="btn btn--ghost btn--sm" href="#work">View projects</a>
+      </div>
+      <p class="hero__hint">
+        <span class="hint-cursor" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 3l14 7.2-6.1 1.6L9.6 18z" fill="currentColor"/></svg>
+        </span>
+        <span class="hint-text hint-text--pointer">Move cursor to call me!</span>
+        <span class="hint-text hint-text--touch">Tap me to say hi!</span>
+      </p>
+    </div>
+
+    <div class="hero__stage" data-stage tabindex="0" role="button" aria-label="Say hi to Jatin">
+      <canvas class="hero__frames" data-frames hidden></canvas>
+      <!-- lid decoration for the 3D frames (coordinates of the 1856x2304 source frames) -->
+      <svg class="hero__lid" data-lid hidden viewBox="0 0 1856 2304" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        <defs>
+          <linearGradient id="lidLogo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fbfbfc"/><stop offset=".55" stop-color="#e3e4e8"/><stop offset="1" stop-color="#c6c8ce"/>
+          </linearGradient>
+          <linearGradient id="lidSwift" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fa7343"/><stop offset="1" stop-color="#f03a2e"/>
+          </linearGradient>
+          <linearGradient id="lidSwiftUI" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3d8bff"/><stop offset="1" stop-color="#1b5fd6"/>
+          </linearGradient>
+          <filter id="lidShadow" x="-20%" y="-20%" width="140%" height="160%">
+            <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#2a2a33" flood-opacity=".28"/>
+          </filter>
+          <path id="appleMark" d="M50 33 C58 28 72 24 82 30 C86 32 89 35 91 38 A16 16 0 0 0 92 66 C90 80 82 96 72 104 C66 109 60 108 50 104 C40 108 34 109 28 104 C14 92 6 72 8 55 C10 36 26 26 40 30 C44 31 47 33 50 33 Z M52 26 C52 14 60 6 70 4 C70 16 62 24 52 26 Z"/>
+        </defs>
+        <!-- polished logo, centred on the lid -->
+        <g transform="translate(873 1742) scale(1.12)">
+          <use href="#appleMark" fill="url(#lidLogo)"/>
+          <use href="#appleMark" fill="none" stroke="#ffffff" stroke-width="1.5" opacity=".8"/>
+        </g>
+        <!-- stickers -->
+        <g filter="url(#lidShadow)" font-family="Manrope, -apple-system, sans-serif" font-weight="700" text-anchor="middle">
+          <g transform="rotate(-8 575 1618)">
+            <rect x="480" y="1582" width="190" height="72" rx="36" fill="url(#lidSwift)" stroke="#fff" stroke-width="8"/>
+            <text x="575" y="1631" font-size="36" fill="#fff">Swift</text>
+          </g>
+          <g transform="rotate(7 1262 1628)">
+            <rect x="1210" y="1576" width="104" height="104" rx="26" fill="#111114" stroke="#fff" stroke-width="8"/>
+            <text x="1262" y="1641" font-size="38" fill="#fff">iOS</text>
+          </g>
+          <g transform="rotate(5 575 2005)">
+            <rect x="470" y="1970" width="210" height="70" rx="18" fill="url(#lidSwiftUI)" stroke="#fff" stroke-width="8"/>
+            <text x="575" y="2018" font-size="34" fill="#fff">SwiftUI</text>
+          </g>
+          <g transform="rotate(-6 1262 2008)">
+            <rect x="1190" y="1976" width="144" height="64" rx="14" fill="#1c1c22" stroke="#fff" stroke-width="8"/>
+            <text x="1262" y="2020" font-size="32" font-family="JetBrains Mono, monospace" font-weight="500" fill="#ffb4a2">&lt;/&gt;</text>
+          </g>
+        </g>
+      </svg>
+      <svg id="dev" class="hero__svg" viewBox="110 20 420 520" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        <!-- Flat illustration: one base colour and one crisp shadow per material, no translucent layers -->
+        <defs>
+          <path id="facePath" d="M264 168 C264 126 290 104 320 104 C350 104 376 126 376 168 C376 200 369 224 353 239 C342 248 331 252 320 252 C309 252 298 248 287 239 C271 224 264 200 264 168 Z"/>
+          <path id="scleraL" d="M285 184 C290 178 306 177.5 311 183 C306 187.5 290 188.5 285 184 Z"/>
+          <path id="scleraR" d="M355 184 C350 178 334 177.5 329 183 C334 187.5 350 188.5 355 184 Z"/>
+          <clipPath id="clipFace"><use href="#facePath"/></clipPath>
+          <clipPath id="clipEyeL"><use href="#scleraL"/></clipPath>
+          <clipPath id="clipEyeR"><use href="#scleraR"/></clipPath>
+          <!-- the desk hides everything below the laptop base -->
+          <clipPath id="clipDesk"><rect x="-100" y="-100" width="840" height="588"/></clipPath>
+          <linearGradient id="gMacLid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e9ebee"/><stop offset=".55" stop-color="#d9dce1"/><stop offset="1" stop-color="#c9cdd3"/>
+          </linearGradient>
+          <linearGradient id="gMacSheen" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".35" stop-color="#ffffff" stop-opacity="0"/>
+            <stop offset=".62" stop-color="#ffffff" stop-opacity=".22"/><stop offset=".7" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="fbLogo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fbfbfc"/><stop offset=".55" stop-color="#e3e4e8"/><stop offset="1" stop-color="#c6c8ce"/>
+          </linearGradient>
+          <linearGradient id="fbSwift" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fa7343"/><stop offset="1" stop-color="#f03a2e"/>
+          </linearGradient>
+          <linearGradient id="fbSwiftUI" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3d8bff"/><stop offset="1" stop-color="#1b5fd6"/>
+          </linearGradient>
+          <filter id="fbShadow" x="-20%" y="-20%" width="140%" height="160%">
+            <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#2a2a33" flood-opacity=".28"/>
+          </filter>
+          <path id="fbApple" d="M50 33 C58 28 72 24 82 30 C86 32 89 35 91 38 A16 16 0 0 0 92 66 C90 80 82 96 72 104 C66 109 60 108 50 104 C40 108 34 109 28 104 C14 92 6 72 8 55 C10 36 26 26 40 30 C44 31 47 33 50 33 Z M52 26 C52 14 60 6 70 4 C70 16 62 24 52 26 Z"/>
+        
+          <radialGradient id="gMacBadge" cx=".35" cy=".3" r=".8">
+            <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#e6e8ec"/><stop offset="1" stop-color="#c3c7ce"/>
+          </radialGradient>
+          <linearGradient id="gMacBase" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e6e8eb"/><stop offset=".5" stop-color="#cfd2d8"/><stop offset="1" stop-color="#b4b8c0"/>
+          </linearGradient>
+          <radialGradient id="gShadow">
+            <stop offset="0" stop-color="#5a1f2c" stop-opacity=".22"/><stop offset="1" stop-color="#5a1f2c" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- contact shadow on the desk -->
+        <ellipse cx="320" cy="497" rx="240" ry="16" fill="url(#gShadow)"/>
+
+        <g id="rig" clip-path="url(#clipDesk)">
+          <!-- hoodie -->
+          <path d="M172 560 C174 350 214 284 320 276 C426 284 466 350 468 560 Z" fill="#2e2329"/>
+          <path d="M320 290 C380 300 404 360 400 560 H468 C466 350 426 284 320 276 Z" fill="#251c21"/>
+          <path d="M262 284 C274 258 366 258 378 284 C364 302 276 302 262 284 Z" fill="#3a2d34"/>
+          <path d="M284 277 C298 266 342 266 356 277 C344 289 296 289 284 277 Z" fill="#1a1317"/>
+          <path d="M305 292 L302 336 M335 292 L338 336" stroke="#eee4e6" stroke-width="2.4" stroke-linecap="round"/>
+          <rect x="299.5" y="334" width="5" height="9" rx="2" fill="#c9b8bd"/>
+          <rect x="335.5" y="334" width="5" height="9" rx="2" fill="#c9b8bd"/>
+
+          <!-- neck -->
+          <path d="M298 214 H342 V268 C342 281 298 281 298 268 Z" fill="#d49b78"/>
+          <path d="M298 230 C310 248 330 248 342 230 V250 C330 262 310 262 298 250 Z" fill="#bd835f"/>
+
+          <!-- arms (behind the laptop) -->
+          <path id="armL" d="M236 292 Q212 390 262 470" fill="none" stroke="#2e2329" stroke-width="30" stroke-linecap="round"/>
+          <path id="armR" d="M404 292 Q428 390 378 470" fill="none" stroke="#2e2329" stroke-width="30" stroke-linecap="round"/>
+
+          <!-- head -->
+          <g id="head">
+            <!-- ears -->
+            <path d="M267 172 C255 166 251 180 253 190 C255 202 263 207 269 205 Z" fill="#cf9570"/>
+            <path d="M263 181 C259 184 259 191 263 195" fill="none" stroke="#b57954" stroke-width="2" stroke-linecap="round"/>
+            <path d="M373 172 C385 166 389 180 387 190 C385 202 377 207 371 205 Z" fill="#c68b66"/>
+            <path d="M377 181 C381 184 381 191 377 195" fill="none" stroke="#ad7250" stroke-width="2" stroke-linecap="round"/>
+
+            <!-- face: base + one shadow side -->
+            <use href="#facePath" fill="#d8a07e"/>
+            <path d="M354 118 C372 136 378 176 370 206 C362 230 344 246 326 251 C346 236 360 210 362 178 C364 150 360 132 354 118 Z" fill="#c78d69"/>
+
+            <!-- beard: one solid shape along the jaw and chin -->
+            <path d="M266 178 C268 210 280 234 298 246 C306 251 313 253 320 253 C327 253 334 251 342 246 C360 234 372 210 374 178 C370 198 362 213 352 222 C345 228 339 232 334 236 C327 241 313 241 306 236 C301 232 295 228 288 222 C278 213 270 198 266 178 Z" fill="#241a1d"/>
+
+            <!-- hair: faded sides, pompadour, one highlight shape -->
+            <path d="M265 180 C261 162 262 146 268 134 L279 140 C273 152 271 166 271 182 Z" fill="#43363a"/>
+            <path d="M375 180 C379 162 378 146 372 134 L361 140 C367 152 369 166 369 182 Z" fill="#43363a"/>
+            <path d="M265 152 C260 118 280 86 318 76 C354 68 386 86 386 124 C386 138 382 150 377 160 C373 148 367 140 359 136 C345 140 327 138 313 132 C299 138 285 140 272 140 C269 143 267 147 265 152 Z" fill="#1f1619"/>
+            <path d="M286 128 C296 102 322 86 352 86 C368 86 380 94 384 108 C370 98 352 96 336 100 C318 104 300 114 286 128 Z" fill="#3a2c32"/>
+
+            <g id="face">
+              <ellipse id="cheekL" cx="288" cy="206" rx="10" ry="5.5" fill="#e58a80" opacity="0"/>
+              <ellipse id="cheekR" cx="352" cy="206" rx="10" ry="5.5" fill="#e58a80" opacity="0"/>
+              <!-- eyes: sclera, iris (moves), lash line; the group scales to blink -->
+              <g id="eyeGL">
+                <use href="#scleraL" fill="#ffffff"/>
+                <g clip-path="url(#clipEyeL)">
+                  <g id="irisL">
+                    <circle cx="298" cy="183" r="5.4" fill="#3b2519"/>
+                    <circle cx="298" cy="183" r="2.6" fill="#120b0d"/>
+                    <circle cx="300" cy="181" r="1.4" fill="#ffffff"/>
+                  </g>
+                </g>
+                <path d="M284.5 184 C289.5 177.5 306.5 177 311.5 183" fill="none" stroke="#1a1114" stroke-width="2.6" stroke-linecap="round"/>
+              </g>
+              <g id="eyeGR">
+                <use href="#scleraR" fill="#ffffff"/>
+                <g clip-path="url(#clipEyeR)">
+                  <g id="irisR">
+                    <circle cx="342" cy="183" r="5.4" fill="#3b2519"/>
+                    <circle cx="342" cy="183" r="2.6" fill="#120b0d"/>
+                    <circle cx="344" cy="181" r="1.4" fill="#ffffff"/>
+                  </g>
+                </g>
+                <path d="M355.5 184 C350.5 177.5 333.5 177 328.5 183" fill="none" stroke="#1a1114" stroke-width="2.6" stroke-linecap="round"/>
+              </g>
+              <!-- brows -->
+              <path id="browL" d="M281 167 C289 160.5 302 158 314 160.5 L313.5 166 C302 163.5 291 164.5 283 171 Z" fill="#1f1619"/>
+              <path id="browR" d="M359 167 C351 160.5 338 158 326 160.5 L326.5 166 C338 163.5 349 164.5 357 171 Z" fill="#1f1619"/>
+              <!-- nose -->
+              <path d="M325 194 C327 199 329 203 328.5 206.5" fill="none" stroke="#c28763" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M313 207.5 C316 212 324 212 327 207.5" fill="none" stroke="#b97d5a" stroke-width="2.4" stroke-linecap="round"/>
+              <!-- mustache (joins the beard) -->
+              <path d="M303 219 C309 213.5 316 213.5 320 215.5 C324 213.5 331 213.5 337 219 C331 218 325 217.8 320 218.8 C315 217.8 309 218 303 219 Z" fill="#241a1d"/>
+              <path d="M303 219 C300 225 300 231 303 237 L306.5 236 C304.5 230 304.5 225 306.5 220 Z M337 219 C340 225 340 231 337 237 L333.5 236 C335.5 230 335.5 225 333.5 220 Z" fill="#241a1d"/>
+              <!-- lips (reshaped every frame) -->
+              <path id="mouth" d="M309 224 Q320 221 331 224 Q320 231 309 224 Z" fill="#a4605a"/>
+            </g>
+          </g>
+
+          <!-- headset: matte black with a rose accent -->
+          <g id="headset">
+            <path id="band" d="" fill="none" stroke="#1f191c" stroke-width="9" stroke-linecap="round"/>
+            <path id="bandInner" d="" fill="none" stroke="#d6a39b" stroke-width="2.5" stroke-linecap="round"/>
+            <g id="cupL">
+              <rect x="-12" y="-20" width="24" height="40" rx="11" fill="#1f191c"/>
+              <rect x="-6" y="-13" width="12" height="26" rx="6" fill="#d6a39b"/>
+            </g>
+            <g id="cupR">
+              <rect x="-12" y="-20" width="24" height="40" rx="11" fill="#1f191c"/>
+              <rect x="-6" y="-13" width="12" height="26" rx="6" fill="#d6a39b"/>
+            </g>
+          </g>
+
+          <!-- hands -->
+          <g id="handL" fill="#d8a07e">
+            <rect x="-11" y="-21" width="6" height="18" rx="3"/>
+            <rect x="-4.5" y="-25" width="6" height="22" rx="3"/>
+            <rect x="2" y="-24" width="6" height="21" rx="3"/>
+            <rect x="8.5" y="-18" width="5.5" height="15" rx="2.75"/>
+            <rect x="-20" y="-3" width="7" height="16" rx="3.5" transform="rotate(-38 -16.5 5)"/>
+            <rect x="-12.5" y="-8" width="27" height="24" rx="10"/>
+          </g>
+          <g id="handR">
+            <rect id="finger" x="-4.5" y="6" width="9" height="28" rx="4.5" fill="#d8a07e" transform="rotate(18)"/>
+            <rect x="-14" y="-12" width="28" height="26" rx="11" fill="#d8a07e"/>
+            <rect x="-16" y="-2" width="8" height="14" rx="4" fill="#c78d69" transform="rotate(-20 -12 5)"/>
+          </g>
+        </g>
+
+        <!-- laptop: MacBook-style aluminium unibody, seen from behind -->
+        <g id="laptop">
+          <!-- lid -->
+          <path d="M176 314 Q176 294 196 294 H444 Q464 294 464 314 V476 H176 Z" fill="url(#gMacLid)"/>
+          <path d="M176 314 Q176 294 196 294 H444 Q464 294 464 314 V476 H176 Z" fill="url(#gMacSheen)"/>
+          <path d="M176 314 Q176 294 196 294 H444 Q464 294 464 314" fill="none" stroke="#f7f8fa" stroke-width="1.6"/>
+          <path d="M176 314 V476 M464 314 V476" stroke="#b9bdc4" stroke-width="1"/>
+          <!-- screen light spilling over the top edge -->
+          <path d="M200 294.5 H440" stroke="#dfeaff" stroke-width="1.2" opacity=".9"/>
+          <!-- logo and stickers, mapped from the 3D frames' lid -->
+          <g transform="translate(176 294) scale(.3 .296) translate(-448 -1526)">
+        <!-- polished logo, centred on the lid -->
+        <g transform="translate(873 1742) scale(1.12)">
+          <use href="#fbApple" fill="url(#fbLogo)"/>
+          <use href="#fbApple" fill="none" stroke="#ffffff" stroke-width="1.5" opacity=".8"/>
+        </g>
+        <!-- stickers -->
+        <g filter="url(#fbShadow)" font-family="Manrope, -apple-system, sans-serif" font-weight="700" text-anchor="middle">
+          <g transform="rotate(-8 575 1618)">
+            <rect x="480" y="1582" width="190" height="72" rx="36" fill="url(#fbSwift)" stroke="#fff" stroke-width="8"/>
+            <text x="575" y="1631" font-size="36" fill="#fff">Swift</text>
+          </g>
+          <g transform="rotate(7 1262 1628)">
+            <rect x="1210" y="1576" width="104" height="104" rx="26" fill="#111114" stroke="#fff" stroke-width="8"/>
+            <text x="1262" y="1641" font-size="38" fill="#fff">iOS</text>
+          </g>
+          <g transform="rotate(5 575 2005)">
+            <rect x="470" y="1970" width="210" height="70" rx="18" fill="url(#fbSwiftUI)" stroke="#fff" stroke-width="8"/>
+            <text x="575" y="2018" font-size="34" fill="#fff">SwiftUI</text>
+          </g>
+          <g transform="rotate(-6 1262 2008)">
+            <rect x="1190" y="1976" width="144" height="64" rx="14" fill="#1c1c22" stroke="#fff" stroke-width="8"/>
+            <text x="1262" y="2020" font-size="32" font-family="JetBrains Mono, monospace" font-weight="500" fill="#ffb4a2">&lt;/&gt;</text>
+          </g>
+        </g>
+          </g>
+          <!-- hinge -->
+          <rect x="182" y="474" width="276" height="6" rx="3" fill="#2b2d31"/>
+          <rect x="182" y="474" width="276" height="1.4" fill="#55585e"/>
+          <!-- base front lip with the thumb notch -->
+          <path d="M140 480 H500 Q508 480 508 487 Q508 495 498 496 H142 Q132 495 132 487 Q132 480 140 480 Z" fill="url(#gMacBase)"/>
+          <path d="M140 480.6 H500" stroke="#f4f5f7" stroke-width="1.2"/>
+          <path d="M290 480.5 H350 Q348 485 340 485.5 H300 Q292 485 290 480.5 Z" fill="#a9aeb6"/>
+          <path d="M150 495.6 H490" stroke="#8e939b" stroke-width="1"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero__aside">
+      <p class="hero__status"><span class="dot" aria-hidden="true"></span><span data-status>Working</span></p>
+      <p class="hero__message is-in" data-message aria-live="polite">Heads down in Xcode</p>
+    </div>
+
+    <a class="hero__scroll" href="#glance" data-scroll-cue>
+      <span>Explore the portfolio</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v15m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ AT A GLANCE ============ -->
+  <section class="glance" id="glance" aria-label="At a glance">
+    <div class="wrap">
+      <dl class="glance__grid">
+        <div class="glance__item reveal">
+          <dt>Experience</dt>
+          <dd><strong>Since 2025</strong><span>iOS Developer at Zapplogics Solution LLP, after an iOS internship at Rudra IT Network</span></dd>
+        </div>
+        <div class="glance__item reveal">
+          <dt>Core stack</dt>
+          <dd><strong>SwiftUI · UIKit</strong><span>Swift, MVVM, Combine and Swift Concurrency in production apps</span></dd>
+        </div>
+        <div class="glance__item reveal">
+          <dt>Testing</dt>
+          <dd><strong>90 unit tests</strong><span>Swift Testing suites covering streaks, challenges and day boundaries in HydraPet</span></dd>
+        </div>
+        <div class="glance__item reveal">
+          <dt>Backend</dt>
+          <dd><strong>REST + Firebase</strong><span>Auth, Firestore, Storage, Analytics and push notifications</span></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="wrap">
+      <p class="eyebrow reveal">About</p>
+      <h2 class="display reveal">I build iPhone apps that feel <em>considered</em>, and I understand what it takes to get them to the App Store.</h2>
+      <div class="about__grid">
+        <div class="about__copy">
+          <p class="lead reveal">
+            I'm an iOS developer at Zapplogics, where I build and look after iPhone apps for our clients in
+            Swift, using SwiftUI or UIKit depending on the project. Writing the feature is only part of the job,
+            so I'm also involved in our releases with TestFlight and App Store Connect, and I understand the
+            whole path from Xcode to App Review.
+          </p>
+          <p class="lead reveal">
+            Most of my week is spent working with designers, QA and backend developers. I connect apps to REST APIs
+            and Firebase, turn repeated screens into components the whole team can reuse, and chase down the small
+            bugs and slow moments that make an app feel unfinished. Before Zapplogics, I moved a bilingual
+            English/Arabic app from UIKit to SwiftUI during my internship, and I'm now building HydraPet, my own app,
+            in my spare time.
+          </p>
+        </div>
+
+        <aside class="seeking reveal" aria-labelledby="seeking-title">
+          <p class="avail avail--card"><span class="avail__dot" aria-hidden="true"></span>Available</p>
+          <h3 id="seeking-title">What I'm looking for</h3>
+          <p>An iOS Developer role on a team that ships, where I can own features from the first screen to a tested build, and keep growing into owning releases too.</p>
+          <ul class="seeking__list">
+            <li>Full-time iOS Developer roles</li>
+            <li>SwiftUI or UIKit codebases</li>
+            <li>Product teams that release regularly</li>
+          </ul>
+          <a class="btn btn--solid" href="#contact">Get in touch</a>
+        </aside>
+      </div>
+
+      <ul class="pillars">
+        <li class="pillar reveal">
+          <span class="pillar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
+          </span>
+          <h3>Native interfaces</h3>
+          <p>SwiftUI and UIKit screens built from reusable components on clean MVVM.</p>
+        </li>
+        <li class="pillar reveal">
+          <span class="pillar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0114-5.3M20 12a8 8 0 01-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+          </span>
+          <h3>Data &amp; services</h3>
+          <p>REST APIs, Codable models, Core Data, and Firebase Auth, Firestore, Storage and Analytics.</p>
+        </li>
+        <li class="pillar reveal">
+          <span class="pillar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg>
+          </span>
+          <h3>Localization</h3>
+          <p>English and Arabic apps, including right-to-left layouts.</p>
+        </li>
+        <li class="pillar reveal">
+          <span class="pillar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3l2.4 5 5.6.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.6-.8z"/></svg>
+          </span>
+          <h3>Testing &amp; quality</h3>
+          <p>Unit tests with Swift Testing, plus debugging and performance work before each release.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section work" id="work">
+    <div class="wrap work__head">
+      <p class="eyebrow reveal">Projects</p>
+      <h2 class="display reveal">Selected work</h2>
+      <p class="lead reveal">Asuaaq, a buy-and-sell app I moved from UIKit to SwiftUI during my internship, and HydraPet, a hydration tracker I'm building on my own. Client work from Zapplogics stays private, so you'll find it under Experience.</p>
+    </div>
+
+    <div class="wrap work__grid">
+      <div class="work__copy">
+        <p class="case__meta reveal"><span class="case__n">01</span>Internship project</p>
+        <h3 class="display display--case reveal">Asuaaq</h3>
+        <p class="lead reveal">
+          A buy-and-sell classifieds app, available in English and Arabic, where users browse listings,
+          filter by category and contact sellers. During my internship at Rudra IT Network I migrated it
+          from UIKit to SwiftUI, then kept developing and maintaining it.
+        </p>
+        <ul class="facts reveal">
+          <li><span>Role</span>iOS Developer (Intern)</li>
+          <li><span>Timeline</span>Jul 2025 – Aug 2025</li>
+          <li><span>Migration</span>UIKit → SwiftUI · MVVM</li>
+        </ul>
+        <div class="did reveal">
+          <h4>What I did</h4>
+          <ul>
+            <li>Migrated the app's UI from UIKit to SwiftUI, rebuilding screens on an MVVM architecture.</li>
+            <li>Built and maintained new features in Swift and SwiftUI after the migration.</li>
+            <li>Integrated REST APIs and Firebase services for feature data and backend communication.</li>
+            <li>Implemented English and Arabic localization, including right-to-left layouts.</li>
+            <li>Fixed SwiftUI, API-integration and stability issues, improving performance and maintainability.</li>
+          </ul>
+        </div>
+        <ul class="stack reveal" aria-label="Tech stack">
+          <li>Swift</li><li>UIKit → SwiftUI</li><li>MVVM</li><li>REST APIs</li><li>Firebase</li><li>Localization (EN / AR)</li>
+        </ul>
+        <p class="note reveal">Real screens from Asuaaq, including its light and dark themes. Pick a screen, or let it play.</p>
+      </div>
+
+      <div class="showcase reveal" data-showcase>
+        <div class="phone">
+          <div class="phone__frame">
+            <div class="phone__island" aria-hidden="true"></div>
+            <div class="phone__screen phone__screen--asuaaq">
+              <img class="shot is-on" src="assets/asuaaq/home.webp" alt="Asuaaq home: listings with filters and categories" data-shot="home" width="375" height="812">
+              <img class="shot" src="assets/asuaaq/dark.webp" alt="Asuaaq home in dark mode" data-shot="dark" width="375" height="812" loading="lazy">
+              <img class="shot" src="assets/asuaaq/categories.webp" alt="Onboarding sheet: select your interested categories" data-shot="categories" width="375" height="812" loading="lazy">
+              <div class="shot shot--tall" data-shot="filters" role="img" aria-label="Category filter sheet"><img class="shot__body" src="assets/asuaaq/filters.webp" alt="" width="375" height="1118" loading="lazy"><img class="shot__top" src="assets/asuaaq/filters-top.webp" alt="" width="375" height="44" loading="lazy"></div>
+              <div class="shot shot--tall" data-shot="product" role="img" aria-label="Product details page with seller and similar listings"><img class="shot__body" src="assets/asuaaq/product.webp" alt="" width="375" height="1830" loading="lazy"><img class="shot__top" src="assets/asuaaq/product-top.webp" alt="" width="375" height="44" loading="lazy"></div>
+              <img class="shot" src="assets/asuaaq/feedback.webp" alt="Price feedback dialog on the product page" data-shot="feedback" width="375" height="812" loading="lazy">
+              <div class="shot shot--tall" data-shot="product-dark" role="img" aria-label="Product details page in dark mode"><img class="shot__body" src="assets/asuaaq/product-dark.webp" alt="" width="375" height="1814" loading="lazy"><img class="shot__top" src="assets/asuaaq/product-dark-top.webp" alt="" width="375" height="44" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+        <div class="shots" role="tablist" aria-label="Asuaaq screens">
+          <button type="button" role="tab" class="is-on" aria-selected="true" data-shot-btn="home">Home</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="dark">Dark mode</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="categories">Categories</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="filters">Filters</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="product">Product</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="feedback">Price feedback</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="product-dark">Product · dark</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HYDRAPET (in development) ============ -->
+  <section class="section work work--alt" id="hydrapet" aria-label="HydraPet">
+    <div class="wrap work__grid">
+      <div class="work__copy">
+        <p class="case__meta reveal"><span class="case__n">02</span>Personal project <span class="tag tag--dev">In development</span></p>
+        <h3 class="display display--case reveal" id="hydrapet-title">HydraPet</h3>
+        <p class="lead reveal">
+          A native iOS hydration tracker built around one idea: you adopt an animal companion, and its body
+          fills with water as you drink toward your daily goal. Streaks, challenges and a weekly insights
+          score turn that into a long-term habit.
+        </p>
+        <ul class="facts reveal">
+          <li><span>Status</span>Version 1.0 in development</li>
+          <li><span>Platform</span>iPhone · iOS 18+</li>
+          <li><span>Architecture</span>SwiftUI · MVVM · SwiftData</li>
+        </ul>
+        <div class="did reveal">
+          <h4>Built so far</h4>
+          <ul>
+            <li>A companion that fills with water as drinks are logged, with 13 drink types weighted by how hydrating they are.</li>
+            <li>Streaks keyed to the user's local calendar day, so midnight, time-zone travel and an unfinished day never break them unfairly.</li>
+            <li>Challenges, a weekly insights score and local reminder notifications.</li>
+            <li>SwiftData storage behind repositories, with <code>@Observable</code> view models and a service layer.</li>
+            <li>90 unit tests written with Swift Testing, including crossing midnight with an injectable clock.</li>
+          </ul>
+        </div>
+        <div class="did did--next reveal">
+          <h4>Up next</h4>
+          <ul>
+            <li>Home-screen widgets with a "+ Water" button (WidgetKit and App Intents).</li>
+            <li>In-app purchases with StoreKit 2.</li>
+            <li>Translations for the 8 languages already in the language picker, including Arabic (RTL).</li>
+          </ul>
+        </div>
+        <ul class="stack reveal" aria-label="Tech stack">
+          <li>SwiftUI</li><li>@Observable</li><li>SwiftData</li><li>Swift Concurrency</li><li>Swift Testing</li><li>UserNotifications</li><li>MVVM</li>
+        </ul>
+        <p class="note reveal">Real screens from HydraPet's v1.0 design. Pick a screen, or let it play.</p>
+      </div>
+
+      <div class="showcase reveal" data-showcase>
+        <div class="phone">
+          <div class="phone__frame">
+            <div class="phone__island" aria-hidden="true"></div>
+            <div class="phone__screen">
+              <img class="shot is-on" src="assets/hydrapet/home.webp" alt="HydraPet home: the turtle fills with water toward the daily goal" data-shot="home" width="393" height="852">
+              <img class="shot" src="assets/hydrapet/goal.webp" alt="Goal achieved: the camel is full and confetti plays" data-shot="goal" width="393" height="852" loading="lazy">
+              <img class="shot" src="assets/hydrapet/camel.webp" alt="Desert theme with the camel companion" data-shot="camel" width="393" height="852" loading="lazy">
+              <img class="shot" src="assets/hydrapet/adjust.webp" alt="Adjust quantity sheet with cup and bottle presets" data-shot="adjust" width="393" height="852" loading="lazy">
+              <div class="shot shot--tall" data-shot="challenges" role="img" aria-label="Challenges: today's focus streak and challenge collections"><img class="shot__body" src="assets/hydrapet/challenges.webp" alt="" width="393" height="1037" loading="lazy"><img class="shot__top" src="assets/hydrapet/challenges-top.webp" alt="" width="393" height="48" loading="lazy"><img class="shot__tab" src="assets/hydrapet/challenges-tab.webp" alt="" width="393" height="84" loading="lazy"></div>
+              <div class="shot shot--tall" data-shot="insights" role="img" aria-label="Insights: weekly hydration score and drink breakdown"><img class="shot__body" src="assets/hydrapet/insights.webp" alt="" width="393" height="1411" loading="lazy"><img class="shot__top" src="assets/hydrapet/insights-top.webp" alt="" width="393" height="48" loading="lazy"><img class="shot__tab" src="assets/hydrapet/insights-tab.webp" alt="" width="393" height="84" loading="lazy"></div>
+              <div class="shot shot--tall" data-shot="settings" role="img" aria-label="Settings: companion, goals, reminders and appearance"><img class="shot__body" src="assets/hydrapet/settings.webp" alt="" width="393" height="1955" loading="lazy"><img class="shot__top" src="assets/hydrapet/settings-top.webp" alt="" width="393" height="48" loading="lazy"><img class="shot__tab" src="assets/hydrapet/settings-tab.webp" alt="" width="393" height="84" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+        <div class="shots" role="tablist" aria-label="HydraPet screens">
+          <button type="button" role="tab" class="is-on" aria-selected="true" data-shot-btn="home">Home</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="goal">Goal met</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="camel">Themes</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="adjust">Log a drink</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="challenges">Challenges</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="insights">Insights</button>
+          <button type="button" role="tab" aria-selected="false" data-shot-btn="settings">Settings</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW HYDRAPET IS BUILT ============ -->
+  <section class="section build" id="hydrapet-build" aria-labelledby="build-title">
+    <div class="wrap">
+      <p class="eyebrow reveal">Under the hood</p>
+      <h2 class="display reveal" id="build-title">How HydraPet is built</h2>
+      <p class="lead build__lead reveal">SwiftUI views talk to <code>@Observable</code> view models. The rules live in small services, and data sits behind repositories, so the app can run on SwiftData and the tests on in-memory stores. The code below is taken straight from the project.</p>
+
+      <figure class="arch reveal" aria-label="HydraPet architecture">
+        <div class="arch__col">
+          <p class="arch__label">UI</p>
+          <div class="arch__box arch__box--ui"><strong>SwiftUI views</strong><span>Home · Challenges · Insights · Settings</span></div>
+          <div class="arch__arrow" aria-hidden="true"></div>
+          <div class="arch__box"><strong>ViewModels</strong><span>@Observable, one per feature</span></div>
+        </div>
+        <div class="arch__col">
+          <p class="arch__label">Services</p>
+          <div class="arch__grid">
+            <div class="arch__box"><strong>HydrationService</strong><span>Weighted drink totals</span></div>
+            <div class="arch__box"><strong>StreakService</strong><span>Streak rules</span></div>
+            <div class="arch__box"><strong>DayBoundaryService</strong><span>Midnight rollover</span></div>
+            <div class="arch__box"><strong>Challenges &amp; Insights</strong><span>Progress · weekly score</span></div>
+          </div>
+        </div>
+        <div class="arch__col">
+          <p class="arch__label">Data</p>
+          <div class="arch__box"><strong>Repositories</strong><span>Protocols · in-memory for tests</span></div>
+          <div class="arch__arrow" aria-hidden="true"></div>
+          <div class="arch__box arch__box--store"><strong>SwiftData</strong><span>Profile · drink logs · challenges</span></div>
+          <div class="arch__box arch__box--next"><strong>Up next: widgets</strong><span>WidgetKit · App Intents</span></div>
+        </div>
+      </figure>
+
+      <div class="build__grid">
+        <ul class="decisions">
+          <li class="decision reveal">
+            <span class="decision__n">01</span>
+            <h3>A day is its own type</h3>
+            <p>Logs, streaks and challenges use a <code>CalendarDay</code> in the user's time zone instead of a raw <code>Date</code>, so a drink logged just before midnight can't land on the wrong day.</p>
+          </li>
+          <li class="decision reveal">
+            <span class="decision__n">02</span>
+            <h3>Today never breaks a streak</h3>
+            <p>Only an unmet <em>yesterday</em> resets the streak, and the goal counts once per day. Both rules live in one small, pure <code>StreakService</code>.</p>
+          </li>
+          <li class="decision reveal">
+            <span class="decision__n">03</span>
+            <h3>Time is injected, so it can be tested</h3>
+            <p>An <code>AppClock</code> is passed in rather than read from the system. Tests move it past midnight and check the rollover, across 90 Swift Testing tests.</p>
+          </li>
+        </ul>
+
+        <div class="code reveal" data-code>
+          <div class="code__bar">
+            <span class="code__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div class="code__tabs" role="tablist" aria-label="Swift source files">
+            <button type="button" role="tab" class="code__tab is-on" data-code-tab="StreakService.swift" aria-selected="true"><span class="code__swift" aria-hidden="true"></span>StreakService.swift</button>
+            <button type="button" role="tab" class="code__tab" data-code-tab="CalendarDay.swift" aria-selected="false"><span class="code__swift" aria-hidden="true"></span>CalendarDay.swift</button>
+            <button type="button" role="tab" class="code__tab" data-code-tab="StreakTests.swift" aria-selected="false"><span class="code__swift" aria-hidden="true"></span>StreakTests.swift</button>
+            </div>
+          </div>
+          <div class="code__pane is-on" data-code-pane="StreakService.swift" role="tabpanel" aria-label="StreakService.swift">
+            <pre class="code__gutter" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</pre>
+            <pre class="code__src"><code><span class="k">import</span> Foundation
+
+<span class="c">/// Owns the retention mechanic (PRD §5.3, FR-HOME-09/11).</span>
+<span class="c">///</span>
+<span class="c">/// Two rules matter most and are easy to get wrong:</span>
+<span class="c">///</span>
+<span class="c">/// 1. **An in-progress day can never break a streak.** Only *yesterday* being unmet</span>
+<span class="c">///    breaks it. A user at 10am with an empty glass still holds their streak.</span>
+<span class="c">/// 2. **The goal counts once per day.** Every later log on a day already met is a no-op</span>
+<span class="c">///    for the streak, so logging ten times does not add ten days.</span>
+nonisolated <span class="k">struct</span> StreakService: Sendable {
+
+    <span class="k">func</span> evaluate(
+        currentStreak: <span class="t">Int</span>,
+        longestStreak: <span class="t">Int</span>,
+        lastGoalMetDate: CalendarDay?,
+        lastOpenedDate: CalendarDay?,
+        today: CalendarDay,
+        isGoalMetToday: <span class="t">Bool</span>,
+        wasGoalMetYesterday: <span class="t">Bool</span>
+    ) -&gt; StreakState {
+        <span class="k">var</span> days = currentStreak
+        <span class="k">var</span> longest = longestStreak
+        <span class="k">var</span> broken = <span class="k">false</span>
+        <span class="k">let</span> alreadyCountedToday = lastGoalMetDate == today
+
+        <span class="c">// Break detection — first foreground of a new day with yesterday unmet.</span>
+        <span class="k">if</span> !alreadyCountedToday, days &gt; <span class="n">0</span>,
+           !wasGoalMetYesterday, lastOpenedDate != today {
+            longest = max(longest, days)
+            days = <span class="n">0</span>
+            broken = <span class="k">true</span>
+        }
+
+        <span class="c">// Increment — today&#x27;s goal has just been met for the first time.</span>
+        <span class="k">if</span> isGoalMetToday, !alreadyCountedToday {
+            days += <span class="n">1</span>
+            broken = <span class="k">false</span>
+            longest = max(longest, days)
+        }
+
+        <span class="k">return</span> StreakState(days: days, longestStreak: longest, isBroken: broken)
+    }
+}</code></pre>
+          </div>
+          <div class="code__pane" data-code-pane="CalendarDay.swift" role="tabpanel" aria-label="CalendarDay.swift" hidden>
+            <pre class="code__gutter" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54</pre>
+            <pre class="code__src"><code><span class="k">import</span> Foundation
+
+<span class="c">/// A calendar date in the user&#x27;s local timezone, stored as `yyyy-MM-dd`.</span>
+<span class="c">///</span>
+<span class="c">/// PRD §5.3: &quot;A DAY = a calendar date in the USER&#x27;S LOCAL TIMEZONE.&quot; Streaks, challenge</span>
+<span class="c">/// progress and midnight transitions all key off this type rather than `Date`, so an</span>
+<span class="c">/// instant near midnight can never be attributed to the wrong day.</span>
+<span class="c">///</span>
+<span class="c">/// `yyyy-MM-dd` is zero-padded and fixed-width, so lexicographic ordering is also</span>
+<span class="c">/// chronological ordering — which is why `Comparable` can simply compare raw strings.</span>
+nonisolated <span class="k">struct</span> CalendarDay: Hashable, Comparable, Codable, Sendable {
+    <span class="k">let</span> rawValue: <span class="t">String</span>
+
+    <span class="k">private</span> <span class="k">static</span> <span class="k">func</span> formatter(<span class="k">for</span> timeZone: TimeZone) -&gt; DateFormatter {
+        <span class="k">let</span> formatter = DateFormatter()
+        formatter.<span class="p">locale</span> = Locale(identifier: <span class="s">&quot;en_US_POSIX&quot;</span>)
+        formatter.<span class="p">dateFormat</span> = <span class="s">&quot;yyyy-MM-dd&quot;</span>
+        formatter.<span class="p">timeZone</span> = timeZone
+        <span class="k">return</span> formatter
+    }
+
+    <span class="k">init</span>(date: <span class="t">Date</span>, calendar: <span class="t">Calendar</span>) {
+        rawValue = Self.<span class="p">formatter</span>(<span class="k">for</span>: calendar.<span class="p">timeZone</span>).<span class="p">string</span>(from: date)
+    }
+
+    <span class="k">init</span>?(rawValue: <span class="t">String</span>) {
+        <span class="k">guard</span> Self.<span class="p">formatter</span>(<span class="k">for</span>: TimeZone(identifier: <span class="s">&quot;UTC&quot;</span>) ?? .<span class="p">gmt</span>)
+            .<span class="p">date</span>(from: rawValue) != <span class="k">nil</span> <span class="k">else</span> { <span class="k">return</span> <span class="k">nil</span> }
+        <span class="k">self</span>.<span class="p">rawValue</span> = rawValue
+    }
+
+    <span class="k">func</span> date(<span class="k">in</span> calendar: <span class="t">Calendar</span>) -&gt; <span class="t">Date</span> {
+        Self.<span class="p">formatter</span>(<span class="k">for</span>: calendar.<span class="p">timeZone</span>).<span class="p">date</span>(from: rawValue) ?? <span class="t">Date</span>()
+    }
+
+    <span class="k">func</span> adding(days: <span class="t">Int</span>, calendar: <span class="t">Calendar</span>) -&gt; CalendarDay {
+        <span class="k">let</span> base = date(<span class="k">in</span>: calendar)
+        <span class="k">let</span> shifted = calendar.<span class="p">date</span>(byAdding: .<span class="p">day</span>, value: days, to: base) ?? base
+        <span class="k">return</span> CalendarDay(date: shifted, calendar: calendar)
+    }
+
+    <span class="c">/// Whole days from `self` to `other`. Negative when `other` is earlier.</span>
+    <span class="k">func</span> days(until other: CalendarDay) -&gt; <span class="t">Int</span> {
+        <span class="k">var</span> utc = <span class="t">Calendar</span>(identifier: .<span class="p">gregorian</span>)
+        utc.<span class="p">timeZone</span> = TimeZone(identifier: <span class="s">&quot;UTC&quot;</span>) ?? .<span class="p">gmt</span>
+        <span class="k">return</span> utc.<span class="p">dateComponents</span>([.<span class="p">day</span>],
+                                  from: date(<span class="k">in</span>: utc),
+                                  to: other.<span class="p">date</span>(<span class="k">in</span>: utc)).<span class="p">day</span> ?? <span class="n">0</span>
+    }
+
+    <span class="k">static</span> <span class="k">func</span> &lt; (lhs: CalendarDay, rhs: CalendarDay) -&gt; <span class="t">Bool</span> {
+        lhs.<span class="p">rawValue</span> &lt; rhs.<span class="p">rawValue</span>
+    }
+}</code></pre>
+          </div>
+          <div class="code__pane" data-code-pane="StreakTests.swift" role="tabpanel" aria-label="StreakTests.swift" hidden>
+            <pre class="code__gutter" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre>
+            <pre class="code__src"><code><span class="k">import</span> Testing
+<span class="a">@testable</span> <span class="k">import</span> HydraPet
+
+<span class="c">// From HydraPetTests/SmokeTests.swift</span>
+<span class="a">@Test</span>(<span class="s">&quot;an in-progress day never breaks a streak&quot;</span>)
+<span class="k">func</span> inProgressDayIsSafe() {
+    <span class="k">let</span> today = CalendarDay(rawValue: <span class="s">&quot;2025-09-15&quot;</span>)!
+    <span class="k">let</span> yesterday = CalendarDay(rawValue: <span class="s">&quot;2025-09-14&quot;</span>)!
+    <span class="k">let</span> state = StreakService().<span class="p">evaluate</span>(
+        currentStreak: <span class="n">6</span>, longestStreak: <span class="n">6</span>,
+        lastGoalMetDate: yesterday, lastOpenedDate: yesterday, today: today,
+        isGoalMetToday: <span class="k">false</span>, wasGoalMetYesterday: <span class="k">true</span>)
+    #expect(state.<span class="p">days</span> == <span class="n">6</span>)
+    #expect(state.<span class="p">isBroken</span> == <span class="k">false</span>)
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section experience" id="experience">
+    <div class="wrap">
+      <p class="eyebrow reveal">Experience</p>
+      <h2 class="display reveal">Where I've been building</h2>
+
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job__meta">
+            <p class="job__date">Sep 2025 — Present</p>
+            <p class="job__tag job__tag--live">Current · Full-time</p>
+          </div>
+          <div class="job__body">
+            <h3>iOS Developer <span>· Zapplogics Solution LLP</span></h3>
+            <ul>
+              <li>Take part in iOS releases with the team through TestFlight and App Store Connect.</li>
+              <li>Develop and maintain production iOS apps with Swift, SwiftUI, UIKit and MVVM.</li>
+              <li>Integrate REST APIs and Firebase — Authentication, Firestore, Storage, Analytics and Push Notifications.</li>
+              <li>Build reusable UI components and shared modules; debug, test and optimize for stability and UX.</li>
+              <li>Work across the lifecycle with UI/UX designers, QA engineers and backend developers.</li>
+            </ul>
+            <p class="job__stack"><span>Stack</span>Swift · SwiftUI · UIKit · MVVM · Firebase · REST · App Store Connect · TestFlight</p>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job__meta">
+            <p class="job__date">Jul 2025 — Aug 2025</p>
+            <p class="job__tag">Internship</p>
+          </div>
+          <div class="job__body">
+            <h3>iOS Developer Intern <span>· Rudra IT Network</span></h3>
+            <ul>
+              <li>Migrated the Asuaaq iOS app from UIKit to SwiftUI, then developed and maintained it using Swift, SwiftUI and MVVM.</li>
+              <li>Integrated REST APIs and Firebase services for features, data management and backend communication.</li>
+              <li>Implemented English and Arabic localization for multilingual users.</li>
+              <li>Resolved SwiftUI, MVVM, API-integration and stability issues while improving performance and maintainability.</li>
+            </ul>
+            <p class="job__stack"><span>Stack</span>Swift · UIKit → SwiftUI · MVVM · Firebase · REST · Localization</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section skills" id="skills">
+    <div class="wrap">
+      <p class="eyebrow reveal">Skills</p>
+      <h2 class="display reveal">The toolkit</h2>
+      <div class="skills__grid">
+        <div class="skillset reveal">
+          <h3>Swift &amp; UI</h3>
+          <ul class="chips">
+            <li>Swift</li><li>SwiftUI</li><li>UIKit</li><li>MVVM</li><li>Observation (@Observable)</li><li>Combine</li><li>Swift Concurrency</li><li>async/await</li><li>Task &amp; actors</li>
+          </ul>
+        </div>
+        <div class="skillset reveal">
+          <h3>Data &amp; networking</h3>
+          <ul class="chips">
+            <li>REST APIs</li><li>Codable / JSON</li><li>Core Data</li><li>UserDefaults / @AppStorage</li><li>Firebase integration</li><li>Firebase Authentication</li>
+          </ul>
+        </div>
+        <div class="skillset reveal">
+          <h3>App Store delivery</h3>
+          <ul class="chips">
+            <li>App Store Connect</li><li>TestFlight</li><li>StoreKit 2 / in-app purchases</li>
+          </ul>
+        </div>
+        <div class="skillset reveal">
+          <h3>Product quality</h3>
+          <ul class="chips">
+            <li>Push notifications</li><li>Localization</li><li>Reusable UI components</li><li>Cross-functional collaboration</li>
+          </ul>
+        </div>
+        <div class="skillset reveal">
+          <h3>Tools &amp; workflow</h3>
+          <ul class="chips">
+            <li>Git / GitHub</li><li>Swift Package Manager</li><li>Debugging &amp; performance optimization</li>
+          </ul>
+        </div>
+        <div class="skillset skillset--ai reveal">
+          <h3>AI-assisted development</h3>
+          <ul class="chips">
+            <li>Claude</li><li>Cursor</li><li>Antigravity</li><li>Codex</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CREDENTIALS ============ -->
+  <section class="section credentials" id="credentials">
+    <div class="wrap">
+      <p class="eyebrow reveal">Credentials</p>
+      <h2 class="display reveal">Learning, certified</h2>
+      <div class="cred__grid">
+        <article class="cert reveal">
+          <div class="cert__head">
+            <span class="cert__badge">Certificate of completion</span>
+            <span class="cert__issuer">Udemy</span>
+          </div>
+          <h3>Complete iOS 16 Developer with SwiftUI and 10 Apps</h3>
+          <dl class="cert__meta">
+            <div><dt>Instructor</dt><dd>Ineuron Intelligence</dd></div>
+            <div><dt>Completed</dt><dd>July 15, 2025</dd></div>
+            <div><dt>Length</dt><dd>15 hours</dd></div>
+            <div><dt>Certificate no.</dt><dd class="mono">UC-9ed6e2cc-cb17-45a9-8b7b-66710a3b6065</dd></div>
+          </dl>
+          <div class="cert__actions">
+            <a class="btn btn--solid" href="https://ude.my/UC-9ed6e2cc-cb17-45a9-8b7b-66710a3b6065" target="_blank" rel="noopener">Verify on Udemy</a>
+            <a class="btn btn--ghost" href="assets/Udemy-iOS16-Certificate.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+
+        <article class="edu reveal">
+          <span class="cert__badge">Education</span>
+          <h3>Bachelor of Computer Applications</h3>
+          <p class="edu__school">Chaudhary Charan Singh University, Meerut</p>
+          <p class="edu__date">Graduated June 2025</p>
+          <p class="edu__desc">Focused on programming, software engineering, database systems and application development.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap contact__inner">
+      <p class="avail reveal"><span class="avail__dot" aria-hidden="true"></span>Open to iOS Developer roles</p>
+      <h2 class="contact__title reveal">Hiring an iOS developer?<br><em>Let's talk.</em></h2>
+      <p class="contact__lead reveal">Email is the fastest way to reach me. I'm happy to share more about my work, walk through code, or join a technical interview.</p>
+      <div class="contact__actions reveal">
+        <a class="btn btn--solid btn--lg" href="mailto:js32640@gmail.com?subject=iOS%20Developer%20role">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 7l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          js32640@gmail.com
+        </a>
+        <a class="btn btn--ghost btn--lg" href="assets/Jatin-Saini-iOS-Resume.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download resume
+        </a>
+      </div>
+      <p class="contact__alt reveal">
+        <button type="button" class="linkish" data-copy="js32640@gmail.com">Copy email</button>
+        <span aria-hidden="true">·</span>
+        <a href="tel:+918439748407">+91 84397 48407</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/jatinsaini07" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- GITHUB: paste your URL and uncomment.
+        <span aria-hidden="true">·</span><a href="https://github.com/YOUR-HANDLE" target="_blank" rel="noopener">GitHub</a>
+        -->
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span data-year>2026</span> Jatin Saini · iOS Developer</p>
+  <nav class="footer__links" aria-label="Footer">
+    <a href="mailto:js32640@gmail.com">Email</a>
+    <a href="assets/Jatin-Saini-iOS-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="https://www.linkedin.com/in/jatinsaini07" target="_blank" rel="noopener">LinkedIn</a>
+    <!-- GITHUB: add your GitHub link here too -->
+    <a href="#top">Back to top ↑</a>
+  </nav>
+</footer>
+
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<script src="hero.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

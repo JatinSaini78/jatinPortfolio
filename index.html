@@ -26,6 +26,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="frames/work-1.webp" fetchpriority="high">
+  <link rel="preload" as="fetch" href="frames/manifest.json" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -77,47 +79,52 @@
     <div class="hero__stage" data-stage tabindex="0" role="button" aria-label="Say hi to Jatin">
       <canvas class="hero__frames" data-frames hidden></canvas>
       <!-- lid decoration for the 3D frames (coordinates of the 1856x2304 source frames) -->
-      <svg class="hero__lid" data-lid hidden viewBox="0 0 1856 2304" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
-        <defs>
-          <linearGradient id="lidLogo" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#fbfbfc"/><stop offset=".55" stop-color="#e3e4e8"/><stop offset="1" stop-color="#c6c8ce"/>
-          </linearGradient>
-          <linearGradient id="lidSwift" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#fa7343"/><stop offset="1" stop-color="#f03a2e"/>
-          </linearGradient>
-          <linearGradient id="lidSwiftUI" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#3d8bff"/><stop offset="1" stop-color="#1b5fd6"/>
-          </linearGradient>
-          <filter id="lidShadow" x="-20%" y="-20%" width="140%" height="160%">
-            <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#2a2a33" flood-opacity=".28"/>
-          </filter>
-          <path id="appleMark" d="M50 33 C58 28 72 24 82 30 C86 32 89 35 91 38 A16 16 0 0 0 92 66 C90 80 82 96 72 104 C66 109 60 108 50 104 C40 108 34 109 28 104 C14 92 6 72 8 55 C10 36 26 26 40 30 C44 31 47 33 50 33 Z M52 26 C52 14 60 6 70 4 C70 16 62 24 52 26 Z"/>
-        </defs>
-        <!-- polished logo, centred on the lid -->
-        <g transform="translate(873 1742) scale(1.12)">
-          <use href="#appleMark" fill="url(#lidLogo)"/>
-          <use href="#appleMark" fill="none" stroke="#ffffff" stroke-width="1.5" opacity=".8"/>
-        </g>
-        <!-- stickers -->
-        <g filter="url(#lidShadow)" font-family="Manrope, -apple-system, sans-serif" font-weight="700" text-anchor="middle">
-          <g transform="rotate(-8 575 1618)">
-            <rect x="480" y="1582" width="190" height="72" rx="36" fill="url(#lidSwift)" stroke="#fff" stroke-width="8"/>
-            <text x="575" y="1631" font-size="36" fill="#fff">Swift</text>
+      <div class="hero__kf" data-kf>
+        <div class="hero__kf-frames">
+          <img class="is-on" src="frames/work-1.webp" data-kf-src="work-1.webp" alt="" width="1080" height="1341" fetchpriority="high" decoding="async">
+        </div>
+        <svg class="hero__lid" data-lid viewBox="0 0 1856 2304" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+          <defs>
+            <linearGradient id="lidLogo" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fbfbfc"/><stop offset=".55" stop-color="#e3e4e8"/><stop offset="1" stop-color="#c6c8ce"/>
+            </linearGradient>
+            <linearGradient id="lidSwift" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fa7343"/><stop offset="1" stop-color="#f03a2e"/>
+            </linearGradient>
+            <linearGradient id="lidSwiftUI" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#3d8bff"/><stop offset="1" stop-color="#1b5fd6"/>
+            </linearGradient>
+            <filter id="lidShadow" x="-20%" y="-20%" width="140%" height="160%">
+              <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#2a2a33" flood-opacity=".28"/>
+            </filter>
+            <path id="appleMark" d="M50 33 C58 28 72 24 82 30 C86 32 89 35 91 38 A16 16 0 0 0 92 66 C90 80 82 96 72 104 C66 109 60 108 50 104 C40 108 34 109 28 104 C14 92 6 72 8 55 C10 36 26 26 40 30 C44 31 47 33 50 33 Z M52 26 C52 14 60 6 70 4 C70 16 62 24 52 26 Z"/>
+          </defs>
+          <!-- polished logo, centred on the lid -->
+          <g transform="translate(873 1742) scale(1.12)">
+            <use href="#appleMark" fill="url(#lidLogo)"/>
+            <use href="#appleMark" fill="none" stroke="#ffffff" stroke-width="1.5" opacity=".8"/>
           </g>
-          <g transform="rotate(7 1262 1628)">
-            <rect x="1210" y="1576" width="104" height="104" rx="26" fill="#111114" stroke="#fff" stroke-width="8"/>
-            <text x="1262" y="1641" font-size="38" fill="#fff">iOS</text>
+          <!-- stickers -->
+          <g filter="url(#lidShadow)" font-family="Manrope, -apple-system, sans-serif" font-weight="700" text-anchor="middle">
+            <g transform="rotate(-8 575 1618)">
+              <rect x="480" y="1582" width="190" height="72" rx="36" fill="url(#lidSwift)" stroke="#fff" stroke-width="8"/>
+              <text x="575" y="1631" font-size="36" fill="#fff">Swift</text>
+            </g>
+            <g transform="rotate(7 1262 1628)">
+              <rect x="1210" y="1576" width="104" height="104" rx="26" fill="#111114" stroke="#fff" stroke-width="8"/>
+              <text x="1262" y="1641" font-size="38" fill="#fff">iOS</text>
+            </g>
+            <g transform="rotate(5 575 2005)">
+              <rect x="470" y="1970" width="210" height="70" rx="18" fill="url(#lidSwiftUI)" stroke="#fff" stroke-width="8"/>
+              <text x="575" y="2018" font-size="34" fill="#fff">SwiftUI</text>
+            </g>
+            <g transform="rotate(-6 1262 2008)">
+              <rect x="1190" y="1976" width="144" height="64" rx="14" fill="#1c1c22" stroke="#fff" stroke-width="8"/>
+              <text x="1262" y="2020" font-size="32" font-family="JetBrains Mono, monospace" font-weight="500" fill="#ffb4a2">&lt;/&gt;</text>
+            </g>
           </g>
-          <g transform="rotate(5 575 2005)">
-            <rect x="470" y="1970" width="210" height="70" rx="18" fill="url(#lidSwiftUI)" stroke="#fff" stroke-width="8"/>
-            <text x="575" y="2018" font-size="34" fill="#fff">SwiftUI</text>
-          </g>
-          <g transform="rotate(-6 1262 2008)">
-            <rect x="1190" y="1976" width="144" height="64" rx="14" fill="#1c1c22" stroke="#fff" stroke-width="8"/>
-            <text x="1262" y="2020" font-size="32" font-family="JetBrains Mono, monospace" font-weight="500" fill="#ffb4a2">&lt;/&gt;</text>
-          </g>
-        </g>
-      </svg>
+        </svg>
+      </div>
       <svg id="dev" class="hero__svg" viewBox="110 20 420 520" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
         <!-- Flat illustration: one base colour and one crisp shadow per material, no translucent layers -->
         <defs>

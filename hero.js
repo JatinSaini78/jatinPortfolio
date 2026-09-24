@@ -336,7 +336,7 @@
     }
 
     // swap in
-    svg.style.display = 'none';
+    stage.querySelector('[data-kf]')?.remove();
     canvas.hidden = false;
     stage.classList.add('is-frames');
     resize();
@@ -377,28 +377,39 @@
   async function createKeyframeRenderer(m) {
     const list = key => [].concat(m.frames[key] || []);
     const urls = [...new Set(Object.keys(m.frames).flatMap(list))];
-    const layer = document.createElement('div');
-    layer.className = 'hero__kf';
-    const deck = document.createElement('div');   // frames stack; the lid decoration sits above it
-    deck.className = 'hero__kf-frames';
-    layer.append(deck);
+    // The first frame is already in the page (index.html), so the hero never starts
+    // on the drawn fallback. The rest load in the background.
+    const layer = stage.querySelector('[data-kf]');
+    const deck = layer.querySelector('.hero__kf-frames');
     const els = {};
-    await Promise.all(urls.map(u => {
-      const img = new Image();
-      img.alt = '';
-      img.src = 'frames/' + u;
-      els[u] = img;
-      deck.append(img);
-      return img.decode();
-    }));
+    const ready = {};
+    for (const img of deck.querySelectorAll('img[data-kf-src]')) els[img.dataset.kfSrc] = img;
+    for (const u of urls) {
+      if (!els[u]) {
+        const img = new Image();
+        img.alt = '';
+        img.decoding = 'async';
+        img.src = 'frames/' + u;
+        els[u] = img;
+        deck.append(img);
+      }
+      ready[u] = els[u].decode().catch(() => {});
+    }
+    await ready[list('work')[0]];
 
     let current = null;
     let z = 1;
     let cleanup, cycleTimer, seqTimers = [];
 
+    let wanted = null;
     function show(url, fade = 480) {
       const next = els[url];
       if (!next || next === current) return;
+      wanted = url;
+      if (!next.complete) {
+        ready[url].then(() => { if (wanted === url) show(url, fade); });
+        return;
+      }
       const prev = current;
       current = next;
       next.style.zIndex = ++z;
@@ -430,12 +441,8 @@
     }
     const WORK = { every: 3400, fade: 520, cycleFade: 1100 };
 
-    const lidDecor = stage.querySelector('[data-lid]');
-    if (lidDecor) { lidDecor.removeAttribute('hidden'); layer.append(lidDecor); } // SVG has no .hidden property
-
-    svg.style.display = 'none';
+    current = els[list('work')[0]];
     stage.classList.add('is-frames');
-    stage.append(layer);
     play('work', { ...WORK, fade: 0 });
 
     return {
@@ -570,5 +577,5 @@
     renderer = frames;
     mode = 'work';
     say('work');
-  }, () => { /* no frames yet: keep the SVG rig */ });
+  }, () => { stage.classList.add('is-fallback'); }); // no frames: show the drawn character
 })();

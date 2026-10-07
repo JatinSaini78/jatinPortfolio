@@ -8,19 +8,20 @@
 <style>
   @page { size: A4; margin: 0; }
   * { box-sizing: border-box; }
-  body { margin: 0; font: 400 9.5pt/1.36 Arial, "Helvetica Neue", Helvetica, sans-serif; color: #1f1f1f; }
-  .page { width: 210mm; height: 297mm; overflow: hidden; padding: 11mm 15mm 9mm; }
+  body { margin: 0; font: 400 9pt/1.45 Arial, "Helvetica Neue", Helvetica, sans-serif; color: #1f1f1f; }
+  .page { width: 210mm; height: 297mm; overflow: hidden; padding: 9mm 14mm 7mm; }
 
+  h1, .title, .contact { text-align: center; }
   h1 { margin: 0; font-size: 21pt; font-weight: 700; letter-spacing: .2pt; color: #111; }
   .title { margin: 3pt 0 0; font-size: 11pt; font-weight: 700; color: #7c2d3e; }
-  .contact { margin: 5pt 0 0; font-size: 9.4pt; color: #333; }
+  .contact { margin: 4pt 0 0; color: #333; }
   .contact a { color: inherit; text-decoration: none; }
 
   h2 {
-    margin: 9pt 0 4pt;
+    margin: 10pt 0 5pt;
     padding-bottom: 2pt;
     border-bottom: .8pt solid #7c2d3e;
-    font-size: 10.4pt;
+    font-size: 10pt;
     font-weight: 700;
     letter-spacing: .9pt;
     text-transform: uppercase;
@@ -28,19 +29,18 @@
   }
   p { margin: 0; }
 
-  .role { margin-top: 5pt; }
+  .role { margin-top: 6pt; }
   .role:first-of-type { margin-top: 0; }
   .role__line { display: flex; justify-content: space-between; gap: 12pt; }
-  .role__title { font-weight: 700; font-size: 10.4pt; }
-  .role__date { white-space: nowrap; font-size: 9.6pt; color: #333; }
-  .role__sub { font-size: 9.6pt; font-style: italic; color: #444; }
-  ul { margin: 3pt 0 0; padding-left: 13pt; }
-  li { margin: 1pt 0; padding-left: 1pt; }
-  .tech { margin-top: 3pt; font-size: 9.4pt; color: #333; }
+  .role__title { font-weight: 700; font-size: 9.8pt; }
+  .role__date { white-space: nowrap; color: #444; }
+  .role__sub { font-style: italic; color: #444; }
+  ul { margin: 2pt 0 0; padding-left: 12pt; }
+  li { margin: 1.5pt 0; padding-left: 1pt; }
+  .tech { margin-top: 2pt; color: #444; }
   .tech b { color: #1f1f1f; }
 
-  .skills p { margin: 2pt 0; padding-left: 38mm; text-indent: -38mm; }
-  .skills b { display: inline-block; width: 38mm; text-indent: 0; }
+  .skills p { display: grid; grid-template-columns: 37mm 1fr; margin: 2pt 0; }
 </style>
 </head>
 <body>
@@ -53,7 +53,7 @@
   </p>
 
   <h2>Summary</h2>
-  <p>iOS developer who builds iPhone apps with Swift, SwiftUI and UIKit. At Zapplogics I work on production apps for clients and take part in their App Store releases, so I know the process from TestFlight through App Review. As an intern I migrated a bilingual English/Arabic app from UIKit to SwiftUI. I care about clean MVVM code, stable releases and working closely with designers and QA.</p>
+  <p>iOS Developer with <b>1+ year of experience</b> building production iOS applications, leveraging AI-driven development to improve productivity and deliver reliable user-focused features. Experienced in API integration, debugging, and App Store releases, with a focus on clean and maintainable code.</p>
 
   <h2>Experience</h2>
   <div class="role">
@@ -62,12 +62,10 @@
       <p class="role__date">Sep 2025 – Present</p>
     </div>
     <ul>
-      <li>Take part in App Store releases for client apps through TestFlight and App Store Connect.</li>
-      <li>Build and maintain features in Swift with SwiftUI and UIKit, following an MVVM architecture.</li>
-      <li>Integrate REST APIs and Firebase services, including Authentication, Firestore, Storage, Analytics and push notifications.</li>
-      <li>Create reusable UI components and shared modules so common screens are not rebuilt for every project.</li>
-      <li>Find and fix crashes, UI bugs and performance problems before release, working alongside QA engineers.</li>
-      <li>Work with designers and backend developers from planning through to release.</li>
+      <li>Develop and maintain production iOS applications using <b>Swift, SwiftUI, UIKit</b>, and MVVM architecture.</li>
+      <li>Support the release lifecycle through <b>TestFlight and App Store Connect</b>, including build distribution and App Review preparation.</li>
+      <li>Integrate REST APIs and Firebase services including Authentication, Firestore, Storage, Analytics, and push notifications.</li>
+      <li>Investigate and resolve crashes, UI defects, and performance issues in collaboration with QA to improve release stability.</li>
     </ul>
   </div>
 
@@ -76,39 +74,48 @@
       <p class="role__title">iOS Developer Intern, Rudra IT Network</p>
       <p class="role__date">Jul 2025 – Aug 2025</p>
     </div>
-    <p class="role__sub">Asuaaq: buy-and-sell classifieds app in English and Arabic</p>
     <ul>
-      <li>Migrated the app from UIKit to SwiftUI, rebuilding its screens on an MVVM architecture.</li>
-      <li>Continued feature work and maintenance on the new SwiftUI codebase after the migration.</li>
-      <li>Connected the app to REST APIs and Firebase for listing data and backend communication.</li>
-      <li>Implemented English and Arabic localization, including right-to-left layouts.</li>
-      <li>Fixed SwiftUI and API integration bugs, making the app more stable and easier to maintain.</li>
+      <li>Worked on Asuaaq, a buy-and-sell classifieds iOS application live on the App Store.</li>
+      <li>Migrated the application from <b>UIKit to SwiftUI</b> and rebuilt screens using MVVM architecture.</li>
+      <li>Integrated REST APIs and Firebase for listing data and backend communication.</li>
+      <li>Implemented English and Arabic localization with right-to-left (RTL) layouts.</li>
     </ul>
   </div>
 
   <h2>Projects</h2>
   <div class="role">
     <div class="role__line">
-      <p class="role__title">HydraPet, personal iOS app</p>
-      <p class="role__date">In development</p>
+      <p class="role__title">Linkle – social planning iOS app</p>
+      <p class="role__date">Personal project</p>
     </div>
     <ul>
-      <li>Building a hydration tracker where an animal companion fills with water as the user drinks, with 13 drink types weighted by how hydrating they are.</li>
-      <li>Wrote streak rules keyed to the user's local calendar day, so midnight, time-zone changes and an unfinished day never break a streak unfairly.</li>
-      <li>Structured the app as SwiftUI views with @Observable view models, a service layer and repositories over SwiftData.</li>
-      <li>Wrote 90 unit tests with Swift Testing, using an injectable clock to test behaviour across midnight.</li>
-      <li>Next: home-screen widgets, StoreKit 2 purchases and translations for 8 languages.</li>
+      <li>Built a native SwiftUI app for discovering, joining and hosting small local plans, with group chat, profiles and subscriptions.</li>
+      <li>Structured it as feature-based MVVM with @Observable view models, repositories, environment-based DI and typed NavigationStack routing with deep links.</li>
+      <li>Built real-time group chat on <b>Firebase Realtime Database</b> with optimistic sending, an offline outbox, polls and security rules, plus waitlist and last-spot race handling.</li>
+      <li>Integrated MapKit, CoreLocation, EventKit, PhotosUI and Sign in with Apple.</li>
+      <li>Wrote <b>unit tests with Swift Testing</b> for business rules such as waitlists, plan states and polls.</li>
     </ul>
-    <p class="tech"><b>Tech:</b> SwiftUI, @Observable, SwiftData, Swift Testing, UserNotifications, MVVM, iOS 18</p>
+  </div>
+
+  <div class="role">
+    <div class="role__line">
+      <p class="role__title">HydraPet – hydration-tracking iOS app</p>
+      <p class="role__date">Personal project · In development</p>
+    </div>
+    <ul>
+      <li>Building a SwiftUI hydration app where an animal companion fills up as the user drinks, across 13 weighted drink types.</li>
+      <li>Implemented calendar-day streaks with Bounce Back, challenges, unlockable companions, weekly insights and reminders.</li>
+      <li>Added SwiftData persistence, live Arabic RTL switching, and unit tests for streaks and day boundaries.</li>
+    </ul>
   </div>
 
   <h2>Skills</h2>
   <div class="skills">
     <p><b>Languages &amp; UI</b> Swift, SwiftUI, UIKit, MVVM, Combine, Observation (@Observable)</p>
     <p><b>Concurrency &amp; data</b> Swift Concurrency (async/await, Task, actors), Codable, JSON, SwiftData, Core Data, UserDefaults, @AppStorage</p>
-    <p><b>Backend &amp; services</b> REST APIs, Firebase (Authentication, Firestore, Storage, Analytics), push notifications</p>
-    <p><b>App Store delivery</b> App Store Connect, TestFlight, StoreKit 2, in-app purchases</p>
-    <p><b>Other</b> Localization (English/Arabic, RTL), unit testing with Swift Testing, debugging, performance optimization</p>
+    <p><b>Backend &amp; services</b> REST APIs, Firebase (Authentication, Firestore, Realtime Database, Storage, Analytics), push notifications</p>
+    <p><b>App Store delivery</b> App Store Connect, TestFlight</p>
+    <p><b>Frameworks &amp; testing</b> MapKit, EventKit, localization (English/Arabic, RTL), Swift Testing, debugging, performance optimization</p>
     <p><b>Tools</b> Xcode, Git, GitHub, Swift Package Manager, AI coding tools (Claude, Cursor, Codex, Antigravity)</p>
   </div>
 

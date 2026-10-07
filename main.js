@@ -98,17 +98,6 @@
     select(0);
   });
 
-  /* code viewer tabs */
-  const code = $('[data-code]');
-  if (code) {
-    const tabs = $$('[data-code-tab]', code);
-    const panes = $$('[data-code-pane]', code);
-    tabs.forEach(tab => tab.addEventListener('click', () => {
-      tabs.forEach(t => { const on = t === tab; t.classList.toggle('is-on', on); t.setAttribute('aria-selected', String(on)); });
-      panes.forEach(p => { p.hidden = p.dataset.codePane !== tab.dataset.codeTab; });
-    }));
-  }
-
   /* copy email */
   const toast = $('[data-toast]');
   let toastTimer;
